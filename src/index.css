@@ -2,8 +2,9 @@
   --heading: #4c4c4c;
   --body: #343434;
   --background: #fffef5;
-  --election-bg: linear-gradient(180deg, #78bced 0%, #f9e0a6 78.53%);
-  --registration-bg: linear-gradient(180deg, #e4716c 0%, #e9bbae 100%);
+  --button: #78bced;
+  --election-gradient: linear-gradient(180deg, #78bced 0%, #f9e0a6 78.53%);
+  --registration-gradient: linear-gradient(180deg, #e4716c 0%, #e9bbae 100%);
 }
 
 * {
@@ -83,6 +84,19 @@ p.inset {
   font: inherit !important;
 }
 
+#mc_embed_signup h2 {
+  font-weight: 500 !important;
+}
+
+#mc_embed_signup input {
+  border-radius: 0 !important;
+}
+
+#mc_embed_signup .button.button {
+  border-radius: 0;
+  background: var(--button);
+}
+
 .countdown {
   position: fixed;
   top: 0;
@@ -115,13 +129,13 @@ p.inset {
 }
 
 .election {
-  background: var(--election-bg);
+  background: var(--election-gradient);
   left: calc(1 / 48 * 100vw);
   height: 100%;
 }
 
 .registration {
-  background: var(--registration-bg);
+  background: var(--registration-gradient);
   left: calc(2 / 48 * 100vw);
   height: 50%;
 }
