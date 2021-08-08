@@ -1,0 +1,18 @@
+{
+  "name": "3MVotesForClimate",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Mark Steve Samson <hello@marksteve.com>",
+  "private": true,
+  "scripts": {
+    "start": "snowpack dev",
+    "build": "snowpack build"
+  },
+  "devDependencies": {
+    "snowpack": "^3.8.3"
+  },
+  "dependencies": {
+    "date-fns": "^2.23.0",
+    "date-fns-tz": "^1.1.6"
+  }
+}

@@ -1,0 +1,98 @@
+:root {
+  --heading: #4c4c4c;
+  --body: #343434;
+  --election-bg: linear-gradient(180deg, #93d2ff 0%, #f6e5b9 78.53%);
+  --registration-bg: linear-gradient(180deg, #ff9090 0%, #e1c0b6 100%);
+}
+
+body {
+  color: var(--body);
+  padding: 0;
+  margin: 0;
+  font-family: "General Sans", sans-serif;
+}
+
+h1,
+p {
+  margin: 0;
+}
+
+h1 {
+  color: var(--heading);
+  font-family: "Clash Grotesk", sans-serif;
+  font-weight: 500;
+  font-size: 59px;
+  line-height: 73px;
+  margin: calc(1 / 48 * 100vw) calc(1 / 48 * 100vw) 90px;
+}
+
+article {
+  display: grid;
+  row-gap: 60px;
+  grid-template-columns: 1fr;
+  margin: 0 calc(3 / 48 * 100vw);
+  max-width: calc(28 / 48 * 100vw);
+  position: relative;
+  z-index: 1;
+}
+
+p {
+  font-size: 18px;
+  line-height: 175%;
+}
+
+p.emphasis {
+  font-size: 24px;
+}
+
+p.inset {
+  padding: 0 calc(1 / 48 * 100vw);
+}
+
+.countdown {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+.countdown > div {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+
+  padding: calc(1 / 48 * 100vw);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+
+  color: white;
+  font-family: "Clash Grotesk", sans-serif;
+  letter-spacing: 0.05em;
+}
+
+.countdown > .election {
+  background: var(--election-bg);
+  left: calc(1 / 48 * 100vw);
+}
+
+.countdown > .registration {
+  background: var(--registration-bg);
+  left: calc(2 / 48 * 100vw);
+}
+
+.countdown .title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.countdown .timer {
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+}
