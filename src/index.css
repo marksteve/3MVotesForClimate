@@ -33,10 +33,14 @@ footer {
   z-index: 1;
 }
 
+strong {
+  font-weight: 500;
+}
+
 header {
   display: flex;
   align-items: center;
-  padding: calc(1 / 48 * 100vw) calc(1 / 48 * 100vw) 90px;
+  padding: calc(1 / 48 * 100vw);
 }
 
 header .logo {
@@ -156,6 +160,10 @@ footer {
   h1 {
     font-size: 32px;
     line-height: 40px;
+  }
+
+  header {
+    padding-bottom: calc(3 / 48 * 100vw);
   }
 
   header .logo {
