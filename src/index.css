@@ -2,8 +2,8 @@
   --heading: #4c4c4c;
   --body: #343434;
   --background: #fffef5;
-  --election-bg: linear-gradient(180deg, #93d2ff 0%, #f6e5b9 78.53%);
-  --registration-bg: linear-gradient(180deg, #ff9090 0%, #e1c0b6 100%);
+  --election-bg: linear-gradient(180deg, #78bced 0%, #f9e0a6 78.53%);
+  --registration-bg: linear-gradient(180deg, #e4716c 0%, #e9bbae 100%);
 }
 
 * {
@@ -27,7 +27,8 @@ p {
 }
 
 h1,
-article {
+article,
+footer {
   position: relative;
   z-index: 1;
 }
@@ -38,7 +39,7 @@ header {
   padding: calc(1 / 48 * 100vw) calc(1 / 48 * 100vw) 90px;
 }
 
-.logo {
+header .logo {
   width: calc(4 / 48 * 100vw);
 }
 
@@ -136,6 +137,10 @@ p.inset {
   text-transform: uppercase;
 }
 
+footer {
+  display: none;
+}
+
 @media screen and (max-width: 1024px) {
   article {
     max-width: calc(32 / 48 * 100vw);
@@ -150,7 +155,6 @@ p.inset {
   h1 {
     font-size: 32px;
     line-height: 40px;
-    text-align: center;
   }
 
   header .logo {
@@ -190,5 +194,15 @@ p.inset {
   .label > .title {
     font-size: 14px;
     line-height: 17px;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer .logo {
+    width: calc(18 / 48 * 100vw);
   }
 }
