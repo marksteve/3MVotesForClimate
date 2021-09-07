@@ -229,3 +229,16 @@ footer {
     width: calc(18 / 48 * 100vw);
   }
 }
+
+/* Near voters registration deadline */
+
+@media screen and (min-width: 800px) {
+  .countdown > .registration {
+    padding-top: 0;
+  }
+
+  .registration > .label {
+    transform: translateY(-100%);
+    padding-bottom: calc(1 / 48 * 100vw);
+  }
+}
